@@ -1,0 +1,13 @@
+out
+dist
+node_modules
+.vscode-test/
+*.vsix
+
+.DS_Store
+**/package-lock.json
+webview-ui/package-lock.json
+package-lock.json
+progress_tracker.md
+project_plan.md
+implementation.md

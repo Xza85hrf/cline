@@ -1,0 +1,142 @@
+.chatViewContainer {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.contentContainer {
+  flex: 1 1 0;
+  min-block-size: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 10px;
+}
+
+.scrollContainer {
+  flex-grow: 1;
+  display: flex;
+}
+
+.virtuosoContainer {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.buttonContainer {
+  display: flex;
+  padding: 10px 15px 0 15px;
+}
+
+.scrollToBottomButton {
+  background-color: var(--vscode-toolbar-hoverBackground);
+  opacity: 0.55;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  block-size: 24px;
+}
+
+.footerSpacer {
+  block-size: 5px;
+}
+
+.autoApproveMenuBottom {
+  margin-block-end: -2px;
+  flex: 0 1 auto;
+  min-block-size: 0;
+}
+
+.hiddenDisplay {
+  display: none;
+}
+
+.scrollToBottomButton:hover {
+  background-color: rgba(var(--vscode-toolbar-hoverBackground), 0.9);
+}
+
+.scrollToBottomButton:active {
+  background-color: var(--vscode-toolbar-hoverBackground);
+  opacity: 0.7;
+}
+
+.welcomeContainer {
+  flex: 1 1 0;
+  min-block-size: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 10px;
+}
+
+.welcomeContent {
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
+.welcomeLink {
+  display: inline;
+}
+
+.autoApproveMenu {
+  margin-block-end: -2px;
+  flex: 0 1 auto;
+  min-block-size: 0;
+}
+
+.primaryButton {
+  flex: var(--button-flex, 2);
+  margin-inline-end: var(--button-margin, 0);
+}
+
+.secondaryButton {
+  flex: var(--button-flex, 1);
+  margin-inline-start: var(--button-margin, 6px);
+}
+
+.buttonWrapper {
+  display: flex;
+  padding: var(--wrapper-padding, 0) 15px 0 15px;
+}
+
+.buttonWrapper[data-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.buttonWrapper[data-visible="false"] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Button variants based on data attributes */
+.buttonWrapper[data-has-buttons="true"] .primaryButton {
+  flex: var(--button-flex, 2);
+  margin-inline-end: var(--button-margin, 0);
+}
+
+.buttonWrapper[data-has-buttons="true"] .secondaryButton {
+  flex: var(--button-flex, 1);
+  margin-inline-start: var(--button-margin, 6px);
+}
+
+/* Streaming state */
+.buttonWrapper[data-has-buttons="true"] .secondaryButton[data-streaming="true"] {
+  flex: 2;
+  margin-inline: 0;
+}
+
+.codiconChevron {
+  font-size: 18px;
+}

@@ -1,0 +1,153 @@
+.settings-container {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    padding: 10px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 17px;
+    padding-inline-end: 17px;
+}
+
+.title {
+    color: var(--vscode-foreground);
+    margin: 0;
+}
+
+.deepseek-title {
+    margin: 10px 0 5px 0;
+}
+
+.content {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-inline-end: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-section {
+    margin-block-end: 5px;
+}
+
+.deepseek-settings {
+    margin-block-end: 10px;
+}
+
+.param-row {
+    display: flex;
+    gap: 10px;
+    margin-block-end: 10px;
+}
+
+.token-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-block-start: 10px;
+}
+
+.token-progress {
+    inline-size: 100%;
+    block-size: 8px;
+    background-color: var(--vscode-progressBar-background);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.token-progress-bar {
+    block-size: 100%;
+    background-color: var(--vscode-progressBar-foreground);
+    transition: inline-size 0.3s ease;
+    inline-size: var(--progress-width);
+}
+
+.token-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: var(--vscode-descriptionForeground);
+}
+
+.token-warning {
+    color: var(--vscode-errorForeground);
+}
+
+.description {
+    font-size: 12px;
+    color: var(--vscode-descriptionForeground);
+    margin-block-end: 10px;
+}
+
+.debug-section {
+    margin-block-start: 10px;
+    margin-block-end: 4px;
+}
+
+.footer {
+    text-align: center;
+    color: var(--vscode-descriptionForeground);
+    font-size: 12px;
+    line-height: 1.2;
+    margin-block-start: auto;
+    padding: 10px 8px 15px 0px;
+}
+
+.footer-text {
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+}
+
+.version {
+    font-style: italic;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.custom-instructions {
+    inline-size: 100%;
+}
+
+.custom-instructions-label {
+    font-weight: 500;
+}
+
+.instruction-text {
+    font-size: 12px;
+    margin-block-start: 5px;
+    color: var(--vscode-descriptionForeground);
+}
+
+.reset-button {
+    margin-block-start: 5px;
+    inline-size: auto;
+}
+
+.reset-text {
+    font-size: 12px;
+    margin-block-start: 5px;
+    color: var(--vscode-descriptionForeground);
+}
+
+/* New classes for previously inline styles */
+.section-title {
+    margin: 10px 0 5px 0;
+}
+
+.test-prompt-button {
+    margin-block-start: 10px;
+}
+
+.inline-link {
+    display: inline;
+}
