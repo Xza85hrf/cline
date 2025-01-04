@@ -22,7 +22,7 @@ A powerful VS Code extension that integrates DeepSeek V3 model, providing an aut
 
 ```bash
 # Clone the repository
-git clone https://github.com/deep-cline/deep-cline
+git clone https://github.com/Xza85hrf/deep-cline.git
 
 # Install dependencies
 npm run install:all
